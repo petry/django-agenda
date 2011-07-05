@@ -77,7 +77,7 @@ def get_previous_object(my_object, date_field):
 def archive(request, queryset, date_field, 
             year, month=None, day=None, 
             template_name=None, template_object_name='object', template_loader=loader,
-            num_objects=5, extra_context=None, allow_empty=True,
+            num_objects=None, extra_context=None, allow_empty=True,
             mimetype=None, context_processors=None):
 
     # Get our model from the queryset
@@ -108,7 +108,7 @@ def archive(request, queryset, date_field,
 
 def index(request, queryset, date_field, 
           template_name=None, template_object_name='object', template_loader=loader,
-          num_objects=5, extra_context=None,
+          num_objects=None, extra_context=None,
           mimetype=None, context_processors=None):
     
     now = datetime.now()      
