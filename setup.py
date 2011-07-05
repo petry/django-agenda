@@ -7,7 +7,7 @@ except:
 
 setup(
     name = 'django-agenda',
-    version = "0.1",
+    version = "0.1.1",
     description = 'An event agenda application for Django 1.0+.',
     long_description = README,
     author = 'Mathijs de Bruin',
